@@ -1,12 +1,12 @@
 import React from 'react'
+import { AppWrapp } from '../../wrapper'
 //import { motion } from 'framer-motion'; USE THIS FOR LATER PROBABLY
-
 
 import './Header.scss'
 
 const header = () => {
   return (
-    <div id='home' className='app__header app__flex'>
+    <div className='app__header app__flex'>
       <div className='header--text'>
         <h1 className='name'>
           Juan Hernandez
@@ -30,4 +30,4 @@ const header = () => {
   )
 }
 
-export default header
+export default AppWrapp(header,'home');

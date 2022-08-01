@@ -9,13 +9,17 @@
     color: var(--primary-color);
 
     
+}
+
+.app__combo{
     @media screen and (max-width: 1200px){
         flex-direction: column;
-        font-size: 2.5vw;
+        padding: 4.5rem 2rem 2rem;
+        font-size: 2vw;
     }
 
     @media screen and (max-width: 800px){
-        padding: 6rem 1rem 2rem;
+        padding: 8rem 1rem 2rem;
         font-size: 3vw;
     }
 }
@@ -26,13 +30,143 @@
     text-align: Center;
 
     .text__container{
-        margin: 10%;
-        border:1px solid black;
+        margin: 6%;
+        background: var(--lightGray-color);
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        box-shadow: 0px 0px 20px var(--primary-color);
+    }
+
+    .btn__container{
+        display: flex;
+        justify-content: space-around;
+
+        div{
+            border-radius: 5px;
+            background-color: var(--lightGray-color);
+            box-shadow: 0px 0px 20px var(--primary-color);
+            transition: all ease-in-out;
+            cursor: pointer;
+            
+            a{
+                display: inline-block;
+                justify-content: center;
+                padding: .5rem 1.5rem;
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                color: var(--primary-color);
+                -webkit-user-select: none;
+                
+                &:hover{
+                    color: var(--secondary-color);
+                }
+
+                @media screen and (max-width: 800px){
+                    padding: .5rem;
+                }
+            }
+            
+        }
+        
+    }
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+        padding-bottom: 2rem;
     }
 }
 
 .app__skills {
+    flex: 1;
     width: 50%;
     flex-direction: column;
     text-align: center;
+    color: var(--primary-color);
+
+    .app__skills-container{
+        display: grid;
+        grid-template: auto 1fr/auto 1fr auto;
+        justify-content: center;
+
+
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+        }
+    }
+}
+
+.app__skills-item {
+    flex-direction: column;
+    text-align:center;
+
+    margin: 1rem;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        background-color: white;
+        -webkit-user-select: none;
+        filter: grayscale(100);
+        
+
+        img{
+            width:50%;
+            height:50%;
+        }
+
+        &:hover {
+            box-shadow: 0 0 25px white;
+            filter: grayscale(0);
+        }
+
+        @media screen and (min-width: 3000px) {
+            width: 250px;
+            height: 250px;
+        }
+
+        @media screen and (max-width: 3000px) {
+            width: 200px;
+            height: 200px;
+        }
+
+        @media screen and (max-width: 2000px) {
+            width: 150px;
+            height: 150px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            width: 80px;
+            height: 80px;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    p {
+        font-weight: 500;
+
+        @media screen and (min-width: 2000px) {
+            font-size: 1.75vw;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 1vw;
+        }
+
+        @media screen and (max-width: 1200px) {
+            font-size: 1.3vh;
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: 1.5vh;
+        }
+    }
 }

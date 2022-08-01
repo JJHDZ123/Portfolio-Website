@@ -3,14 +3,14 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
 import './Navbar.scss';
-import Logofull from '../assets/logo.png';
+import Logo from '../../assets/logo.png';
 
 export default function Navbar() {
 	const [ toggle, setToggle ] = useState(false);
 	return (
 		<nav className="app__navbar">
 			<div className="app__navbar-logo">
-				<img src={Logofull} alt="logo" />
+				<img src={Logo} alt="logo" />
 			</div>
 			<ul className="app__navbar-links">
 				{[ 'home', 'skills', 'projects', 'contact' ].map((item) => {
@@ -30,7 +30,7 @@ export default function Navbar() {
 					<motion.div whileInView={{ x: [ 300, 0 ] }} transition={{ duration: 0.85, ease: 'easeOut' }}>
 						<HiX onClick={() => setToggle(false)} />
 						<ul>
-							{[ 'home', 'skills', 'projects', 'about', 'contact' ].map((item) => {
+							{[ 'home', 'skills', 'projects', 'contact' ].map((item) => {
 								return (
 									<li key={{ item }}>
 										<a href={`#${item}`} onClick={() => setToggle(false)}>
