@@ -1,17 +1,31 @@
 import { React, useState }from 'react'
+import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
 import { AppWrapp } from '../../wrapper'
 
 import './Footer.scss'
 
-const footer = () => {
+const Footer = () => {
+  
+  const [form, setForm] = useState({name: '', email: '', phone: '', message: ''});
 
-  const name=[];
-  function handleChangeInput() {
-    console.log('was typed in')
+  function handleChange(id) {
+
   }
 
-  
+  function sendEmail(e) {
+
+    e.preventDefault();
+
+    emailjs.sendForm('service_wlw500g', 'template_um2g87j', form.current, 's8B4bpyUM9hR7VeaT')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+  }
+
   return (
     <motion.div className='app__footer'
       whileInView = {{y: [100,50,0], opacity: [0,0,1]}}
@@ -28,23 +42,25 @@ const footer = () => {
         </div>
       </div>
 
-      <div className='app__footer-form app__flex'>
-        <div>
-          <input type='text' placeholder='Your Name' value={name} onChange={handleChangeInput} required/>
+      <form onSubmit={sendEmail} >
+        <div className='app__footer-form app__flex'>
+          <div>
+            <input type='text' placeholder='Your Name' name='name' id='name' value={form.name} onChange={() => handleChange(this.id)} required/>
+          </div>
+          <div>
+            <input type='text' placeholder='Email id' name='email' id='email' value={form.email} onChange={() => handleChange(this.id)} required/>
+          </div>
+          <div>
+            <input type='text' placeholder='Phone number' name='phone' id='phone' value={form.phone} onChange={() => handleChange(this.id)} required/>
+          </div>
+          <div>
+            <textarea type='text' placeholder='Send me a message!' name='message' id='message' value={form.message} onChange={() => handleChange(this.id)} required/>
+          </div>
+          <button type='submit' className='contact__btn'>Send</button>
         </div>
-        <div>
-          <input type='text' placeholder='Email id' required/>
-        </div>
-        <div>
-          <input type='text' placeholder='Phone number' required/>
-        </div>
-        <div>
-          <textarea type='text' placeholder='Send me a message!' required/>
-        </div>
-        <button type='submit'>Send</button>
-      </div>
+      </form>
     </motion.div>
   )
 }
 
-export default AppWrapp(footer, 'contact');
+export default AppWrapp(Footer, 'contact');
