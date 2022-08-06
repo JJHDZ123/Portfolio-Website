@@ -53,7 +53,7 @@ const Footer = () => {
             <input type='text' placeholder='Your Name' name='name' required/>
           </div>
           <div>
-            <input type='text' placeholder='Email id' name='email' required/>
+            <input type='text' placeholder='Email' name='email' required/>
           </div>
           <div>
             <input type='text' placeholder='Phone number' name='phone' required/>

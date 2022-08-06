@@ -59,7 +59,7 @@
   .p-text {
     font-size: 0.8rem;
     text-align: left;
-    color: var(--gray-color);
+    color: var(--primary-color);
     line-height: 1.5;
   
     @media screen and (min-width: 2000px) {
@@ -70,7 +70,7 @@
   .bold-text {
     font-size: 1rem;
     font-weight: 800;
-    color: var(--black-color);
+    color: var(--secondary-color);
     text-align: left;
   
     @media screen and (min-width: 2000px) {
@@ -176,9 +176,5 @@
     .app__navigation,
     .app__social {
       display: none;
-    }
-  
-    .copyright {
-      padding: 2rem;
     }
   }

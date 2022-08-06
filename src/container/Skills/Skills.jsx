@@ -57,7 +57,7 @@ const Skills = () => {
             transition={{ duration: 0.3 }}
             whileTap={{ scale: 1}}
           >
-            <a href={`#home`}>Contact me</a>
+            <a href={`#contact`}>Contact me</a>
           </motion.div>
         </div>
       </div>
