@@ -1,29 +1,31 @@
-import { React, useState }from 'react'
+import { React,useState, useRef }from 'react'
 import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
 import { AppWrapp } from '../../wrapper'
+import { BsPhone, BsEnvelope } from 'react-icons/bs'
 
 import './Footer.scss'
 
 const Footer = () => {
-  
-  const [form, setForm] = useState({name: '', email: '', phone: '', message: ''});
 
-  function handleChange(id) {
-
-  }
-
-  function sendEmail(e) {
+  const [isLoading, setIsLoading] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const form = useRef();
+  const sendEmail = (e) => {
+    setIsLoading(true)
 
     e.preventDefault();
 
     emailjs.sendForm('service_wlw500g', 'template_um2g87j', form.current, 's8B4bpyUM9hR7VeaT')
       .then((result) => {
           console.log(result.text);
+          form.current.reset();
+          setIsFormSubmitted(true)
+          setIsLoading(false)
+
       }, (error) => {
           console.log(error.text);
       });
-
   }
 
   return (
@@ -35,29 +37,37 @@ const Footer = () => {
 
       <div className='app__footer-cards app__flex'>
         <div className='app__footer-card'>
-          <img alt='email'/ >
+          <BsEnvelope className='icon'/>
+          <a href='mailto:juanherndev@gmail.com' className='p-text'>juanherndev@gmail.com</a>
         </div>
         <div className='app__footer-card'>
-          <img alt='phone'/ >
+          <BsPhone className='icon'/>
+          <a href='tel: +1 (832) 562-8723' className='p-text'>+1 (832) 562-8723</a>
         </div>
       </div>
 
-      <form onSubmit={sendEmail} >
+      <form ref={form} onSubmit={sendEmail} >
+        {!isFormSubmitted ?
         <div className='app__footer-form app__flex'>
           <div>
-            <input type='text' placeholder='Your Name' name='name' id='name' value={form.name} onChange={() => handleChange(this.id)} required/>
+            <input type='text' placeholder='Your Name' name='name' required/>
           </div>
           <div>
-            <input type='text' placeholder='Email id' name='email' id='email' value={form.email} onChange={() => handleChange(this.id)} required/>
+            <input type='text' placeholder='Email id' name='email' required/>
           </div>
           <div>
-            <input type='text' placeholder='Phone number' name='phone' id='phone' value={form.phone} onChange={() => handleChange(this.id)} required/>
+            <input type='text' placeholder='Phone number' name='phone' required/>
           </div>
           <div>
-            <textarea type='text' placeholder='Send me a message!' name='message' id='message' value={form.message} onChange={() => handleChange(this.id)} required/>
+            <textarea type='text' placeholder='Send me a message!' name='message' required/>
           </div>
-          <button type='submit' className='contact__btn'>Send</button>
+          <button type='submit' className='contact__btn'>{isLoading ? 'Sending' : 'Send Message'}</button>
         </div>
+        : <motion.div
+            animate={{y: [50,0], opacity: [0,1]}}
+          >
+            <h3 className='head-text'> Thank you for getting in touch!</h3>
+          </motion.div>}
       </form>
     </motion.div>
   )

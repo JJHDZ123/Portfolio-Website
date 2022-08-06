@@ -43,16 +43,18 @@ const Skills = () => {
         <div className='btn__container'>
           <motion.div
             whileHover={{
-              scale: 1.1
+              scale: [1,1.2,1.1],
             }}
+            transition={{ duration: 0.3 }}
             whileTap={{ scale: 1 }}
           >
             <a href={`#home`}>Resume</a>
           </motion.div>
           <motion.div
             whileHover={{
-              scale: 1.1,
+              scale: [1,1.2,1.1],
             }}
+            transition={{ duration: 0.3 }}
             whileTap={{ scale: 1}}
           >
             <a href={`#home`}>Contact me</a>
