@@ -33,7 +33,7 @@ const Footer = () => {
       whileInView = {{y: [100,50,0], opacity: [0,0,1]}}
       transition={{duration: .5}}
     >
-      <h2> Feel free to contact me! </h2>
+      <h2 className='head-text'> Feel free to contact me! </h2>
 
       <div className='app__footer-cards app__flex'>
         <div className='app__footer-card'>
