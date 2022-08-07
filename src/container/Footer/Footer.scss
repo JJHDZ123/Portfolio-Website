@@ -15,6 +15,13 @@
     align-items: center;
     color: var(--lightGray-color);
 
+    h2 {
+        @media screen and (max-width:770px) {
+            font-size: x-large;
+            margin-top: 2rem;
+        }
+    }
+
     .app__footer-cards {
         width: 100%;
         display: flex;
@@ -64,6 +71,8 @@
 
         @media screen and (max-width:770px) {
             width: 100%;
+            margin: .5rem;
+
         }
 
     }
@@ -114,11 +123,15 @@
         margin: 2rem 0 0 0;
         font-family: var(--font-base);
         cursor: pointer;
+
+        @media screen and (max-width:770px) {
+            margin: .25rem 0;
+        }
     }
 
     @media screen and (max-width:770px) {
         width: 100%;
-        margin: 1rem 0;
+        margin: .25rem 0;
     }
 
 }
