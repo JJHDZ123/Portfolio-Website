@@ -28,7 +28,7 @@ const Projects = () => {
       whileInView = {{y: [100,50,0], opacity: [0,0,1]}}
       transition={{duration: .5}}
     >
-      <h1>Projects!</h1>
+      <h2 className='head-text'>Projects!</h2>
 
       <div className='app__flex projects__container'>
         {workElements}
