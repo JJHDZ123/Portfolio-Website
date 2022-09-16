@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Portfolio-Website/static/css/main.6b7e0467.css",
-    "main.js": "/Portfolio-Website/static/js/main.70b66003.js",
-    "static/js/787.28a6522c.chunk.js": "/Portfolio-Website/static/js/787.28a6522c.chunk.js",
-    "static/media/memegen.png": "/Portfolio-Website/static/media/memegen.4b1b9e76f1f498924d09.png",
-    "static/media/react.png": "/Portfolio-Website/static/media/react.20adfb35ae6a6e5817bf.png",
-    "static/media/tenziesgame.png": "/Portfolio-Website/static/media/tenziesgame.10f2c8cf27eb1d34686b.png",
-    "static/media/sass.png": "/Portfolio-Website/static/media/sass.36e863bfbcb25c109d00.png",
-    "static/media/node.png": "/Portfolio-Website/static/media/node.8683d89cf78ffae3d1f7.png",
-    "static/media/logo.png": "/Portfolio-Website/static/media/logo.7393ae04037ae70d1a9f.png",
-    "static/media/scrum.png": "/Portfolio-Website/static/media/scrum.20aa4fdac6a9c4bfe7f6.png",
-    "static/media/css.png": "/Portfolio-Website/static/media/css.5721a3928fe43de6baf8.png",
-    "static/media/git.png": "/Portfolio-Website/static/media/git.a54d3fa44e02f2f61e69.png",
-    "index.html": "/Portfolio-Website/index.html",
-    "main.6b7e0467.css.map": "/Portfolio-Website/static/css/main.6b7e0467.css.map",
-    "main.70b66003.js.map": "/Portfolio-Website/static/js/main.70b66003.js.map",
-    "787.28a6522c.chunk.js.map": "/Portfolio-Website/static/js/787.28a6522c.chunk.js.map"
+    "main.css": "/static/css/main.c8a7012f.css",
+    "main.js": "/static/js/main.c583f009.js",
+    "static/js/787.28a6522c.chunk.js": "/static/js/787.28a6522c.chunk.js",
+    "static/media/memegen.png": "/static/media/memegen.4b1b9e76f1f498924d09.png",
+    "static/media/react.png": "/static/media/react.20adfb35ae6a6e5817bf.png",
+    "static/media/tenziesgame.png": "/static/media/tenziesgame.10f2c8cf27eb1d34686b.png",
+    "static/media/sass.png": "/static/media/sass.36e863bfbcb25c109d00.png",
+    "static/media/node.png": "/static/media/node.8683d89cf78ffae3d1f7.png",
+    "static/media/logo.png": "/static/media/logo.7393ae04037ae70d1a9f.png",
+    "static/media/scrum.png": "/static/media/scrum.20aa4fdac6a9c4bfe7f6.png",
+    "static/media/css.png": "/static/media/css.5721a3928fe43de6baf8.png",
+    "static/media/git.png": "/static/media/git.a54d3fa44e02f2f61e69.png",
+    "index.html": "/index.html",
+    "main.c8a7012f.css.map": "/static/css/main.c8a7012f.css.map",
+    "main.c583f009.js.map": "/static/js/main.c583f009.js.map",
+    "787.28a6522c.chunk.js.map": "/static/js/787.28a6522c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b7e0467.css",
-    "static/js/main.70b66003.js"
+    "static/css/main.c8a7012f.css",
+    "static/js/main.c583f009.js"
   ]
 }
