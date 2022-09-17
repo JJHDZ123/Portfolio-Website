@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.c8a7012f.css",
-    "main.js": "/static/js/main.c583f009.js",
+    "main.css": "/static/css/main.718165d2.css",
+    "main.js": "/static/js/main.71db50c1.js",
     "static/js/787.28a6522c.chunk.js": "/static/js/787.28a6522c.chunk.js",
-    "static/media/memegen.png": "/static/media/memegen.4b1b9e76f1f498924d09.png",
+    "static/media/QuickSnags.png": "/static/media/QuickSnags.7340b6b46473f2ee4e16.png",
+    "static/media/Chatter.png": "/static/media/Chatter.6f87037fe38c1d1f4449.png",
     "static/media/react.png": "/static/media/react.20adfb35ae6a6e5817bf.png",
-    "static/media/tenziesgame.png": "/static/media/tenziesgame.10f2c8cf27eb1d34686b.png",
     "static/media/sass.png": "/static/media/sass.36e863bfbcb25c109d00.png",
     "static/media/node.png": "/static/media/node.8683d89cf78ffae3d1f7.png",
     "static/media/logo.png": "/static/media/logo.7393ae04037ae70d1a9f.png",
@@ -13,12 +13,12 @@
     "static/media/css.png": "/static/media/css.5721a3928fe43de6baf8.png",
     "static/media/git.png": "/static/media/git.a54d3fa44e02f2f61e69.png",
     "index.html": "/index.html",
-    "main.c8a7012f.css.map": "/static/css/main.c8a7012f.css.map",
-    "main.c583f009.js.map": "/static/js/main.c583f009.js.map",
+    "main.718165d2.css.map": "/static/css/main.718165d2.css.map",
+    "main.71db50c1.js.map": "/static/js/main.71db50c1.js.map",
     "787.28a6522c.chunk.js.map": "/static/js/787.28a6522c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8a7012f.css",
-    "static/js/main.c583f009.js"
+    "static/css/main.718165d2.css",
+    "static/js/main.71db50c1.js"
   ]
 }
