@@ -6,6 +6,23 @@
     height: 100vh;
     font-size: 1.75vw;
 
+    @media screen and (max-width:810px) {
+        min-height: 850px;
+    }
+
+}
+.body-container{
+    height:80%;
+}
+
+.head-text{
+    padding-top: 2rem;
+
+    @media screen and (max-width:825px) {
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+
+    }
 }
 
 .app__footer{
@@ -16,7 +33,7 @@
     color: var(--lightGray-color);
 
     h2 {
-        @media screen and (max-width:770px) {
+        @media screen and (max-width:825px) {
             font-size: x-large;
             margin-top: 2rem;
         }
@@ -26,11 +43,11 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap-reverse;
-
-        margin: 4rem 2rem 2rem;
+        gap:2rem;
+        
 
         .app__footer-card {
             min-width: 290px;
@@ -69,9 +86,17 @@
             }
         }
 
+        @media screen and (max-width:825px) {
+            width: 100%;
+            justify-content: center;
+            gap: 1rem;
+
+        }
+
         @media screen and (max-width:770px) {
             width: 100%;
-            margin: .5rem;
+            justify-content: center;
+            gap: 0rem;
 
         }
 

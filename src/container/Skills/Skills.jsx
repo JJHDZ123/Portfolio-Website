@@ -48,7 +48,8 @@ const Skills = () => {
             transition={{ duration: 0.3 }}
             whileTap={{ scale: 1 }}
           >
-            <a href={`#home`}>Resume</a>
+            <a href='https://drive.google.com/file/d/1-xhrVCp-iBlaAxsDQh93I7DeVRAK-e5V/view'target='_blank' 
+            rel="noopener noreferrer">Resume</a>
           </motion.div>
           <motion.div
             whileHover={{
