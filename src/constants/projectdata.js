@@ -4,9 +4,9 @@ import QuickSnags from '../assets/QuickSnags.png';
 const projectData = [
 	{
 		name            : 'QuickSnags',
-		liveUrl         : 'https://quicksnags.herokuapp.com/products',
+		liveUrl         : 'https://quicksnags.herokuapp.com/',
 		repoUrl         : 'https://github.com/JJHDZ123/QuickSnags-MERN',
-		projectImageUrl : 'QuickSnags',
+		projectImageUrl : QuickSnags,
 		description     :
 			'Full feature commerce site, for all your favorite snacks and interesting snacks from aroudn the world. Please Give it a little time for the web Dynos to spin up as it is hosted on Heroku'
 	},
