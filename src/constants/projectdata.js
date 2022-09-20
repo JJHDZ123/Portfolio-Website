@@ -13,7 +13,7 @@ const projectData = [
 	},
 	{
 		name            : 'Chatter',
-		liveUrl         : 'https://chatter-juan.herokuapp.com/chat',
+		liveUrl         : 'https://chatter-juan.herokuapp.com/',
 		repoUrl         : 'https://github.com/JJHDZ123/Chatter-MERN',
 		projectImageUrl : Chatter,
 		description     :
